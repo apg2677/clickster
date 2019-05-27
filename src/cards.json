@@ -15,7 +15,7 @@
     {
         "id":3,
         "name": "Zelda",
-        "imageUrl": "",
+        "imageUrl": "https://cdn.vox-cdn.com/thumbor/rJ1h8cFUwZhf9XmBA9pheM5_KpE=/0x0:1024x896/920x0/filters:focal(0x0:1024x896):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11688937/zelda.png",
         "count":0
     },
     {
@@ -32,8 +32,21 @@
     },
     {
         "id":6,
-        "name": "Rygar",
-        "imageUrl": "",
+        "name": "Double Dribble",
+        "imageUrl": "https://cdn.vox-cdn.com/thumbor/o-sXOxQO-6aNLQVO9Hw_UIu4-ZQ=/0x0:1024x896/920x0/filters:focal(0x0:1024x896):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11672261/double_dribble.png",
+        "count":0
+    },
+    {
+        "id":7,
+        "name": "Final Fantasy",
+        "imageUrl": "https://cdn.vox-cdn.com/thumbor/70FTwyjipYYlCx_dYtgyDoc3hMo=/0x0:1024x896/920x0/filters:focal(0x0:1024x896):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11672263/final_fantasy.png",
+        "count":0
+    },
+    {
+        "id":8,
+        "name": "Ninja Gaiden 2",
+        "imageUrl": "https://cdn.vox-cdn.com/thumbor/K6u4tppuHhK-cTRS1VTWMSSn6Jo=/0x0:1024x896/920x0/filters:focal(0x0:1024x896):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11672265/ninja_gaiden_2.png",
         "count":0
     }
+    
 ]
