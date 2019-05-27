@@ -19,8 +19,8 @@ class App extends Component {
            clickCount={this.clickCount}
            id={card.id}
            key = {card.id}
-           image = {card.image}/>
-
+           image = {card.image}
+           name = {card.name} />
         ) ) }
        
       </Wrapper>
