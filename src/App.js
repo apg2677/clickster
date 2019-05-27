@@ -34,7 +34,7 @@ class App extends Component {
            clickCount={this.clickCount}
            id={card.id}
            key = {card.id}
-           image = {card.image}
+           imageUrl = {card.imageUrl}
            name = {card.name} />
         ) ) }
        
