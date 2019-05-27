@@ -10,6 +10,19 @@ class App extends Component {
     score:0,
     highscore:0
   };
+
+  clickCount = id => {
+    this.state.cards.find((obj, i) => {
+      if (obj.id===id) {
+          if(cards[i].count === 0) {
+            cards[i].count = cards[i].count + 1;
+            this.setState({score:this.state.score +1});
+          } else {
+            alert("GameOver!");
+          }
+      }
+    });
+  }
   render() {
     return (
       <Wrapper>
