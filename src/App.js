@@ -17,6 +17,8 @@ class App extends Component {
           if(cards[i].count === 0) {
             cards[i].count = cards[i].count + 1;
             this.setState({score:this.state.score +1});
+            this.setState.cards = ShuffleCards(cards);
+            return true;
           } else {
             alert("GameOver!");
           }
@@ -41,5 +43,14 @@ class App extends Component {
   }
 
 }
-
+function ShuffleCards(a) {
+  var rndIndex, temp, i;
+  for (i=a.length-1;i>0;i--) {
+    rndIndex = Math.floor(Math.random() * (i+1));
+    temp = a[i];
+    a[i] = a[rndIndex];
+    a[rndIndex] = temp;
+  }
+  return a;
+}
 export default App;
