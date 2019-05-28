@@ -21,7 +21,7 @@
     {
         "id":4,
         "name": "Castlevania",
-        "imageUrl": "",
+        "imageUrl": "https://cdn.vox-cdn.com/thumbor/smgHtkurb68sQiL9b5MzVZPQMCA=/0x0:1024x896/1720x0/filters:focal(0x0:1024x896):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11688933/castlevania_3.png",
         "count":0
     },
     {
@@ -46,6 +46,30 @@
         "id":8,
         "name": "Ninja Gaiden 2",
         "imageUrl": "https://cdn.vox-cdn.com/thumbor/K6u4tppuHhK-cTRS1VTWMSSn6Jo=/0x0:1024x896/920x0/filters:focal(0x0:1024x896):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11672265/ninja_gaiden_2.png",
+        "count":0
+    },
+    {
+        "id":9,
+        "name": "Baloon Fight",
+        "imageUrl": "https://cdn.vox-cdn.com/thumbor/r2HWumG57rSrHWdCijS6aLZe4WQ=/0x0:1024x896/1720x0/filters:focal(0x0:1024x896):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11672235/balloon_fight.png",
+        "count":0
+    },
+    {
+        "id":10,
+        "name": "Blaster Master",
+        "imageUrl": "https://cdn.vox-cdn.com/thumbor/ZvX-nGcjXcg4vVht3waZ4-Kq840=/0x0:1024x896/1720x0/filters:focal(0x0:1024x896):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11672257/blaster_master.png",
+        "count":0
+    },
+    {
+        "id":11,
+        "name": "Contra",
+        "imageUrl": "https://cdn.vox-cdn.com/thumbor/kqqYVEk0VU6kKc9TTxDo8dAk3yU=/0x0:1024x896/1720x0/filters:focal(0x0:1024x896):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11672287/contra.png",
+        "count":0
+    },
+    {
+        "id":12,
+        "name": "Life Force",
+        "imageUrl": "https://cdn.vox-cdn.com/thumbor/NAJlopsK2bgaU8nD-ch3ikbVX98=/0x0:1024x896/1720x0/filters:focal(0x0:1024x896):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11688917/life_force.png",
         "count":0
     }
     
