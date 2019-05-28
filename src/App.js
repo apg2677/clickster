@@ -3,6 +3,7 @@ import Card from "./components/card";
 import Wrapper from "./components/wrapper";
 import Header from "./components/header";
 import cards from "./cards.json";
+import {Alert} from 'reactstrap';
 
 class App extends Component {
   state = {
@@ -11,6 +12,16 @@ class App extends Component {
     highscore:0
   };
 
+  endGame = () => {
+    if (this.state.score > this.state.highscore) {
+      this.setState({highscore: this.state.score});
+    }
+   
+    this.state.cards.forEach(card => {
+      card.count=0;
+    })
+    this.setState({score:0});
+  }
   clickCount = id => {
     this.state.cards.find((obj, i) => {
       if (obj.id===id) {
@@ -20,7 +31,7 @@ class App extends Component {
             this.setState.cards = ShuffleCards(cards);
             return true;
           } else {
-            alert("GameOver!");
+            this.endGame();
           }
       }
     });
@@ -29,6 +40,7 @@ class App extends Component {
     return (
       <Wrapper>
         <Header score={this.state.score} highscore={this.state.highscore}>Clickster</Header>
+        <Alert color="danger">Game Over</Alert>
         {this.state.cards.map( card => (
            <Card 
            clickCount={this.clickCount}

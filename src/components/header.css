@@ -1,13 +1,22 @@
 .header {
-    width:100%;
+    width:980px;
     margin-bottom:10px;
-
+    background: #eee;
+    height:50px;
 }
 
 .title {
     float:left;
+    margin-left:25px;
+    padding-top:15px;
+    font-size: 14pt;
+    font-weight:bold;
 }
 
 .scores {
     float:right;
+    margin-right:25px;
+    padding-top:15px;
+    font-size:14pt;
+    font-weight:bold;
 }
