@@ -4,23 +4,26 @@ import Wrapper from "./components/wrapper";
 import Header from "./components/header";
 import cards from "./cards.json";
 import {Alert} from 'reactstrap';
+import "./App.css";
 
 class App extends Component {
   state = {
     cards,
     score:0,
-    highscore:0
+    highscore:0,
+    gameOver:false
   };
 
   endGame = () => {
     if (this.state.score > this.state.highscore) {
       this.setState({highscore: this.state.score});
     }
-   
+    this.setState({gameOver:true});
     this.state.cards.forEach(card => {
       card.count=0;
     })
     this.setState({score:0});
+    
   }
   clickCount = id => {
     this.state.cards.find((obj, i) => {
@@ -40,7 +43,8 @@ class App extends Component {
     return (
       <Wrapper>
         <Header score={this.state.score} highscore={this.state.highscore}>Clickster</Header>
-        <Alert color="danger">Game Over</Alert>
+        <Alert isOpen={this.state.gameOver} className="alert" color="danger">Game Over</Alert>
+        
         {this.state.cards.map( card => (
            <Card 
            clickCount={this.clickCount}
