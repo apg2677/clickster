@@ -39,11 +39,17 @@ class App extends Component {
       }
     });
   }
+  ResetGame = () => {
+    alert("Reset");
+    this.setState({gameOver:false});
+  }
+
   render() {
     return (
       <Wrapper>
         <Header score={this.state.score} highscore={this.state.highscore}>Clickster</Header>
-        <Alert isOpen={this.state.gameOver} className="alert" color="danger">Game Over</Alert>
+        <Alert isOpen={this.state.gameOver} className="alert" color="danger">Game Over <button onClick={this.ResetGame}>Retry</button>
+        </Alert>
         
         {this.state.cards.map( card => (
            <Card 
@@ -59,6 +65,7 @@ class App extends Component {
   }
 
 }
+
 function ShuffleCards(a) {
   var rndIndex, temp, i;
   for (i=a.length-1;i>0;i--) {
