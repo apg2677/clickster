@@ -40,15 +40,15 @@ class App extends Component {
     });
   }
   ResetGame = () => {
-    alert("Reset");
     this.setState({gameOver:false});
+    this.setState.cards = ShuffleCards(cards);
   }
 
   render() {
     return (
       <Wrapper>
         <Header score={this.state.score} highscore={this.state.highscore}>Clickster</Header>
-        <Alert isOpen={this.state.gameOver} className="alert" color="danger">Game Over <button onClick={this.ResetGame}>Retry</button>
+        <Alert isOpen={this.state.gameOver} className="alert" color="danger">Game Over <button className="btn btn-primary" onClick={this.ResetGame}>Retry</button>
         </Alert>
         
         {this.state.cards.map( card => (
