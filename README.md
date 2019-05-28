@@ -4,6 +4,9 @@ This application is created using react to demonstrate the use of components for
 
 The user is provided with a grid of images, each image is a screenshot from a classic nes game
 
-when the user clicks on the image and the image has not been clicked previously the score will go up by one otherwise the game is over
+when the user clicks on the image and the image has not been clicked previously the score will go up by one otherwise the game is over and a game over
+alert will appear with a button to give the user the opportunity to reset the game.  The high score will however reamain
+
+
 
 
